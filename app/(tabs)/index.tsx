@@ -65,6 +65,15 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
+        <Link href="/login">
+          <Link.Trigger>
+            <ThemedText type="subtitle">Step 2b: Login</ThemedText>
+          </Link.Trigger>
+          <Link.Preview />
+        </Link>
+        <ThemedText>{`Ve a la pantalla de login para autenticar al guardia antes de consultar pases.`}</ThemedText>
+      </ThemedView>
+      <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
         <ThemedText>
           {`When you're ready, run `}
